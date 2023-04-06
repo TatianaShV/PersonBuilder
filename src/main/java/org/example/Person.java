@@ -84,9 +84,8 @@ public class Person {
     public PersonBuilder newChildBuilder() {
         return new PersonBuilder()
                 .setSurname(getSurname())
+                .setAddress(getCity());
 
-                .setAddress(getCity())
-                .setName(name);
     }
 }
 
